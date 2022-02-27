@@ -1,0 +1,222 @@
+* {
+		
+		margin: 0;
+		padding: 0;
+		color: #ddf;
+		background-color: #112;
+		
+		box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+#root {
+		display: flex;
+		justify-content: center;
+		
+}
+
+.App {
+	width: 1000px;
+	margin: 0;
+	padding: 0;
+	color: rgba(255, 255, 255, 0.438);
+	background-color: #112;
+	text-align: center;
+}
+
+
+.atributes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px 32px;
+	padding-left: 32px;
+	list-style: none;
+}
+.atributes-item {
+	display: flex;
+	margin-bottom: 8px;
+}
+.atributes-item-name {
+	display: flex;
+}
+.atributes-item-value {
+	display: flex;
+	padding-left: 12px;
+}
+
+.user { 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	box-sizing: border-box;
+	margin-bottom: 16px;
+	padding: 24px 16px;
+	border: 2px solid rgba(255, 255, 255, 0.438);
+
+	background: #112;
+	border-radius: 16px;
+}
+.user-content {
+	display: flex;
+
+}
+.user-actions {
+	align-self: flex-start;
+}
+
+.user:last-child {
+	margin-bottom: 0;
+}
+
+.user-enter {
+	transform: translateX(100%);
+}
+
+.user-enter-active {
+	transform: translateX(0px);
+	transition: all 500ms ease-in;
+}
+
+.user-exit {
+	opacity: 1;
+}
+
+.user-exit-active{
+		transform: translateX(-1500px);
+		transition: all 500ms ease-in;
+}
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after {
+	transition: all ease 0.5s;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 0.3em;
+	margin: 1em;
+	border: solid 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.button:hover {
+	box-shadow: 0 0 5em 0.5em rgba(50, 50, 150, 0.5);
+}
+
+.button span {
+	display: inline-block;
+	width: 100%;
+	padding: 0.6em 2em;
+}
+
+.button:hover span {
+	background-color: #fff;
+	color: #112;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after {
+	content: "";
+	position: absolute;
+	border: 1px;
+}
+
+.button::before,
+.button span::before {
+	border-style: solid none;
+}
+
+.button::before,
+.button span::after {
+	left: 0;
+	top: -0.4em;
+	width: 100%;
+	height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after {
+	border-style: none solid;
+}
+
+.button::after,
+.button span::before {
+	top: 0;
+	left: -0.4em;
+	height: 100%;
+	width: calc(100% + 0.8em);
+}
+
+.button:hover::after,
+.button:hover span::after {
+	transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before {
+	transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before {
+	opacity: 0;
+}
+
+/* user-form */
+.user-form {
+
+}
+.user-form > * {
+	margin-top: 32px;
+}
+.user-form-title {
+	font-size: 32px;
+	margin-top: 0;
+}
+.user-form-list {
+	list-style: none;
+}
+.user-form-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.user-form-item:last-child {
+	margin-bottom: 0;
+}
+.user-form-label {
+	flex: 0 0 148px;
+	margin-right: 16px;
+	word-break: break-all;
+	text-align: left;
+}
+.user-form-input {
+	flex: 1 0 auto;	
+	box-sizing: border-box;
+	padding: 6px 12px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.list-actions {
+	display: flex;
+	justify-content: space-between;
+}
+.list-actions-remove {
+
+}
+.list-actions-filter {
+
+}

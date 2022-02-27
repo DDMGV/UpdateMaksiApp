@@ -1,0 +1,6 @@
+.mySelect {
+    border: 3px solid rgba(255, 255, 255, 0.438);
+    margin-top: 1em;
+    display: flex;
+    cursor: pointer;
+}

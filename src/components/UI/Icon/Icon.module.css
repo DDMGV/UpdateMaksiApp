@@ -1,0 +1,13 @@
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: rgb(29, 29, 58);
+}
+.iconDesc {
+    color: rgba(255, 255, 255, 0.438);
+    background: unset;
+}
